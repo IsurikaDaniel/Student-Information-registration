@@ -1,0 +1,186 @@
+body{
+    background-color: rgb(45, 52, 54);
+}
+h1{
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    display: grid;
+   /* grid-template-columns: 1fr 3fr; /* Two columns: 1/4 width for the left and 3/4 width for the right */
+    gap: 20px; 
+    height: 100vh;
+}
+.mainImg{
+    height: 600px;
+    width: 600px;
+}
+.signup{
+    color: rgb(133, 136, 138);
+}
+
+
+
+/* Input code */ 
+.input {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 500px;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .input input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(6, 201, 255);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .input label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(228, 226, 226);
+  }
+  
+  .input :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: rgb(45, 52, 54);
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(6, 201, 255);
+  }
+
+  /* btn code */
+/* .button {
+    position: relative;
+    background-color: transparent;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::before {
+    content: "Welcome!";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg,#284a77,#2dd4d4 );
+    border-radius: 5px;
+    transform: translate(0%,90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::after {
+    content: "Log in";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(5, 109, 138);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%,-100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    transform: translate(0%,0%);
+  }
+  
+  .button:hover::after {
+    transform: translate(0%,-200%);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active {
+    scale: 0.95;
+  } */
+
+ 
+.btn-Login {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 550;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: 20px;
+    color: black;
+    box-shadow:
+      0px 0px 20px rgba(21, 84, 122, 0.5),
+      0px 5px 5px -1px rgb(55, 107, 190),
+      inset 4px 4px 8px rgb(65, 160, 204),
+      inset -4px -4px 8px rgb(72, 132, 228);
+  }
+  
+  .btn-Login:hover {
+    background-position: right top;
+  }
+  
+  .btn-Login:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-Login {
+      transition: linear;
+    }
+  }
+  
+  
+  
+  
