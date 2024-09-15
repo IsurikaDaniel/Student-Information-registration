@@ -6,3 +6,15 @@ function LoginIn() {
 function SingUp() {
     window.location.href = "studentInfo.html";
 }
+
+function Next() {
+    window.location.href = "guardianInfo.html";
+}
+
+function Clear() {
+    // type alate msg .................
+}
+
+function Register() {
+    // window.location.href = "studentInfo.html";
+}
