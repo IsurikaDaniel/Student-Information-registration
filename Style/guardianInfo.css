@@ -67,7 +67,7 @@ h2{
   }
 
 /* btn */
-.btn-action {
+.btn-reg {
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
@@ -99,11 +99,11 @@ h2{
       inset -4px -4px 8px rgb(72, 132, 228);
   }
   
-  .btn-action:hover {
+  .btn-reg:hover {
     background-position: right top;
   }
   
-  .btn-action:is(:focus, :focus-visible, :active) {
+  .btn-reg:is(:focus, :focus-visible, :active) {
     outline: none;
     box-shadow:
       0 0 0 3px var(--btn-bg-color),
@@ -111,8 +111,84 @@ h2{
   }
   
   @media (prefers-reduced-motion: reduce) {
-    .btn-action {
+    .btn-reg {
       transition: linear;
     }
   }
   
+  /* register btn style */
+
+  .styled-button {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  background: linear-gradient(to bottom, rgb(21, 176, 219), rgb(5, 109, 138));
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgb(21, 176, 219), 0 10px 20px rgb(5, 109, 138);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(15, 71, 87);
+}
+
+.styled-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  bottom: -5px;
+  left: 9px;
+  background: linear-gradient(to bottom, rgb(43, 184, 223), rgb(5, 109, 138));
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+
+.styled-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(5, 109, 138), 0 5px 10px rgb(6, 160, 202);
+}
+
+.styled-button .inner-button {
+  position: relative; /* Ensure relative positioning for pseudo-element */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(5, 109, 138),rgb(47, 190, 230));
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(5, 109, 138);
+  border: 1px solid rgb(14, 76, 94);
+  transition: all 0.2s ease;
+}
+
+.styled-button .inner-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: linear-gradient(to bottom,rgb(14, 76, 94),rgb(15, 71, 87));
+  z-index: -1;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+.styled-button .inner-button .icon {
+  filter: drop-shadow(0 10px 20px rgb(6, 147, 185))
+    drop-shadow(0 0 4px rgb(3, 54, 68));
+  transition: all 0.4s ease-in-out;
+}
+.styled-button .inner-button .icon:hover {
+  filter: drop-shadow(0 10px 20px rgba(71, 198, 233, 0.884))
+    drop-shadow(0 0 20px rgba(3,54,68));
+  transform: rotate(-35deg);
+}
