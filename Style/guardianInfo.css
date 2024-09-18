@@ -1,11 +1,11 @@
 body{
     background-color: rgb(45, 52, 54);
+    justify-content: center;
+    text-align: center;
 }
 h1{
     color: rgb(255, 255, 255);
     margin-top: 80px;
-    justify-content: center;
-    text-align: center;
 }
 h2{
     color: rgb(6, 201, 255);
@@ -74,8 +74,6 @@ h2{
     --btn-bg-color: hsla(360 100% 100% / 1);
     cursor: pointer;
     margin-top: 20px;
-    justify-content: center;
-    justify-items: center;
     padding: 0.9em 1.4em;
     min-width: 120px;
     min-height: 44px;
@@ -130,8 +128,6 @@ h2{
   box-shadow: 0 2px 4px rgb(21, 176, 219), 0 10px 20px rgb(5, 109, 138);
   transition: all 0.2s ease;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgb(15, 71, 87);
 }
 
@@ -155,7 +151,7 @@ h2{
 }
 
 .styled-button .inner-button {
-  position: relative; /* Ensure relative positioning for pseudo-element */
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;

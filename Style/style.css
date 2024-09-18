@@ -1,11 +1,11 @@
 body{
     background-color: rgb(45, 52, 54);
+    justify-content: center;
+    text-align: center;
 }
 h1{
     color: rgb(255, 255, 255);
     margin-top: 80px;
-    justify-content: center;
-    text-align: center;
 }
 .container {
     display: grid;
@@ -67,80 +67,13 @@ h1{
   }
 
   /* btn code */
-/* .button {
-    position: relative;
-    background-color: transparent;
-    color: #000000;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 10px;
-    width: 150px;
-    height: 60px;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button::before {
-    content: "Welcome!";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(135deg,#284a77,#2dd4d4 );
-    border-radius: 5px;
-    transform: translate(0%,90%);
-    z-index: 99;
-    position: relative;
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button::after {
-    content: "Log in";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:rgb(5, 109, 138);
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    pointer-events: none;
-    transform-origin: top;
-    transform: translate(0%,-100%);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button:hover::before {
-    transform: translate(0%,0%);
-  }
-  
-  .button:hover::after {
-    transform: translate(0%,-200%);
-  }
-  
-  .button:focus {
-    outline: none;
-  }
-  
-  .button:active {
-    scale: 0.95;
-  } */
 
- 
 .btn-Login {
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
     --btn-bg-color: hsla(360 100% 100% / 1);
     cursor: pointer;
-    justify-content: center;
-    justify-items: center;
     padding: 0.9em 1.4em;
     min-width: 120px;
     min-height: 44px;
