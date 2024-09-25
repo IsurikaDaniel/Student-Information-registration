@@ -3,9 +3,9 @@ function LoginIn() {
     window.location.href = "studentInfo.html";
 }
 
-function SingUp() {
-    window.location.href = "studentInfo.html";
-}
+// function SingUp() {
+//     window.location.href = "studentInfo.html";
+// }
 
 function Next() {
     window.location.href = "guardianInfo.html";
@@ -60,7 +60,7 @@ function login() {
     }
 
     // Send a GET request to fetch student data
-    fetch('http://localhost:8080/StudentInfo/get')
+    fetch('http://localhost:8080/AccountInfo/get')
     .then(response => {
         if (response.ok) {
             return response.json(); // Parse the response data
@@ -87,4 +87,3 @@ function login() {
         alert(error.message);
     });
 }
-

@@ -3,87 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Account Creation</title>
+    <title>Student Information</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="Style/studentInfo.css">
 </head>
 <body>
-    
-<h1>Create an Account</h1>
+    <h1>Create an Account</h1>
+    <h2>Student Information</h2>
 
-<h2>Student Information</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="student-form">
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="text" id="student-name" required autocomplete="on">
+                            <label for="student-name">Student Name</label>
+                        </div>
+                    </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="logo"> </div>
-            <form>
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="text" id="name" name="name" required autocomplete="on">
-                        <label for="name">Name</label>
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="tel" id="student-contact" required autocomplete="on">
+                            <label for="student-contact">Student Contact</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="tel" id="contact" name="contact" required autocomplete="on">
-                        <label for="contact">Contact</label>
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="date" id="student-birthday" required autocomplete="on">
+                            <label for="student-birthday">Student Birthday</label>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="date" id="birthday" name="birthday" required autocomplete="on">
-                        <label for="birthday">Birthday</label>
-                    </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="number" id="age" name="age" required autocomplete="on">
-                        <label for="age">Age</label>
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="number" id="student-age" required autocomplete="on">
+                            <label for="student-age">Student Age</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="email" id="email" name="email" required autocomplete="on">
-                        <label for="email">Email</label>
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="email" id="student-email" required autocomplete="on">
+                            <label for="student-email">Student Email</label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <div class="input mt-5">
-                        <input type="text" id="course" name="course" required autocomplete="on">
-                        <label for="course">Course</label>
+                    <div class="form-group">
+                        <div class="input mt-5">
+                            <input type="text" id="student-course" required autocomplete="on">
+                            <label for="student-course">Student Course</label>
+                        </div>
                     </div>
-                </div>
-            </form>
+                    
+                    <button type="button" class="btn btn-primary" onclick="saveStudentInfo()">Next</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Image of Student Registration -->
+                <img src="Img/stuInfo.jpg" alt="Student Registration Image" class="img-fluid">
+            </div>
         </div>
-
-        <div class="col-md-6">
-            <div class="right-column"></div>
-            <img src="Img/stuInfo.jpg" alt="Programmer Image" class="mainImg">
-        </div>
-
     </div>
 
-    <div class="">
-        <button class="btn-action md-5" onclick="Clear()">Clear</button>
-        <button class="btn-action md-5" onclick="Next()">Next</button>
-    </div>
-</div>
-
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="./js/studentInfo.js"></script>
 </body>
 </html>

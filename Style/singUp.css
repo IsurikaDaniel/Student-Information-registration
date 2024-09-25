@@ -69,7 +69,7 @@ h1{
   }
 /* btn */
  
-.btn-Login {
+.btn-signup {
     --clr-font-main: hsla(0 0% 20% / 100);
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
@@ -98,11 +98,11 @@ h1{
       inset -4px -4px 8px rgb(72, 132, 228);
   }
   
-  .btn-Login:hover {
+  .btn-signup:hover {
     background-position: right top;
   }
   
-  .btn-Login:is(:focus, :focus-visible, :active) {
+  .btn-signup:is(:focus, :focus-visible, :active) {
     outline: none;
     box-shadow:
       0 0 0 3px var(--btn-bg-color),
@@ -110,7 +110,7 @@ h1{
   }
   
   @media (prefers-reduced-motion: reduce) {
-    .btn-Login {
+    .btn-signup {
       transition: linear;
     }
   }
